@@ -1,0 +1,695 @@
+
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+::selection {
+
+    background:var(--color-hover);
+  }
+
+:root {
+    --color-primary: #ff5e14;
+    --color-secondry: #152332;
+    --color-hover: #ff8022;
+    --rgba-primary-1: rgba(255, 94, 20, 0.1);
+    --rgba-primary-2: rgba(255, 94, 20, 0.2);
+    --rgba-primary-3: rgba(255, 94, 20, 0.3);
+    --rgba-primary-4: rgba(255, 94, 20, 0.4);
+    --rgba-primary-5: rgba(255, 94, 20, 0.5);
+    --rgba-primary-6: rgba(255, 94, 20, 0.6);
+    --rgba-primary-7: rgba(255, 94, 20, 0.7);
+    --rgba-primary-8: rgba(255, 94, 20, 0.8);
+    --rgba-primary-9: rgba(255, 94, 20, 0.9);
+    --text-sec: #2d3239;
+}
+
+header{
+
+    height:16vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    position:fixed;
+    z-index:300;
+}
+
+
+
+.get{
+    
+    display: inline-block;
+    background-color:var(--color-primary);
+    padding:1vw 1vw;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    vertical-align:middle;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* border: 0px solid; */
+}
+
+.get:hover{
+    background-color:#e9923a;
+    color: rgb(0, 0, 0);
+}
+
+.top{
+    
+    height: 7vh;
+    /* margin: auto; */
+    display:flex;
+     justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    /* position: relative; */
+
+}
+
+.top .info{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2vw;
+
+}
+
+
+.top ul{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.33vw;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+
+ @media (max-width:500px) {
+
+    header{
+        height: 20vh;
+    }
+    .top{
+        padding-top: 10px;
+        height: 13vh;
+        flex-wrap: wrap;
+        column-gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .top .info 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .top ul{
+        gap: 5px;
+        margin: auto;
+        font-size: 3vw;
+
+
+    }
+    .get{
+        font-size: 2.7vw;
+
+    }
+
+    .nav{
+        padding-top: 4px;
+    }
+
+    .logo p{
+        display: none;
+        
+    }
+
+    .logo h2{
+        display: none;
+    }
+    .tabs ul i{
+        font-size: 7.6vw;
+        font-weight: 500;
+    }
+    .logo img {
+        object-fit: cover;
+        width:50vw;   
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .enq .enq1 .left2{
+        display: none;
+    }
+
+
+    .name .name1{
+        max-width: 100%;
+        margin: 0px auto;
+    }
+    .name .name1 .first span{
+        font-size: 6.5vw;
+
+    }
+    .name .name1 .sec p{
+        font-size: 2.5vw;
+        font-size: 3vw;
+
+    }
+    .sec .no .getap {
+        left: 15%;
+    }   
+    .cont .item .p{
+        font-size: x-large;
+        margin-top: 80px;
+    }
+    .cont .item span img{
+        height: 70px;
+        margin: auto 0px;
+    }
+    .enq1{
+        margin: none;
+        padding: none;
+    }
+
+
+
+    .intro1 .left{
+        flex-direction: column;
+        justify-content: baseline;
+        max-width: 90%;
+        margin: 0px auto;
+    }
+
+    .left .btns
+    {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .btns button{
+        border: none;
+        font-size: 5px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .name1 .first{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    
+ }
+
+
+
+header section{
+    align-content: center;
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.nav{
+
+
+    max-width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.tabs{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.tabs i{
+    font-size: 2vw;
+    font-weight: 600;
+    display: none;
+}
+
+
+.tabs ul{
+    display: flex;
+    align-content: flex-end;
+    justify-content:center;
+    gap: 2vw;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tabs ul li {
+    cursor: pointer;
+    font-size: 1.33vw;
+    font-weight: 550;
+   
+}
+
+.tabs ul li:hover{
+    
+    color:#ff5e14;
+}
+
+@media (max-width:600px) {
+
+    .tabs ul li{
+        display: none;
+
+    }
+
+    .tabs i{
+        display: block;
+        font-size: 4vw;
+    }
+    
+}
+
+
+
+main .intro{
+
+    top: 0px;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    position: relative;
+    background-image: url("https://cdn11.bigcommerce.com/s-pe6ujkk8u3/images/stencil/original/i/rebar-1__58899.original.jpg");
+    background-repeat: no-repeat;
+    background-size: max(1000px , 100vw);
+    background-position: 10% 25%;
+
+  
+}
+
+.intro1{
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.left span{
+
+    color:whitesmoke;
+    font-size: 42px;
+    font-weight:700;    
+}
+
+.left p{
+    font-size: 19px;
+    color: whitesmoke;
+    
+}
+
+.left
+{
+    max-width: 45%;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+main .btns button{
+   
+    /* margin: 2px 2px; */
+    border: none;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 10px 22px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main .btns  .bt1{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+main .btns  .bt1:hover{
+    color: #000000;
+    background-color: rgba(247, 244, 244, 0.76);
+}
+
+
+main .btns .bt2{
+    background-color: green;
+    color: whitesmoke;
+}
+
+main .btns  .bt2:hover{
+    color: #000000;
+    background-color: rgba(247, 244, 244, 0.76);
+}
+
+main .enq{
+
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://wallpaperaccess.com/full/937102.jpg");
+    background-size: max(1200px , 100vw);
+    background-repeat: no-repeat;
+    background-position: 10% 25%;
+    
+}
+
+.enq .enq1{
+    height: 90vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+}
+
+main .enq .left2 {
+    position: absolute;
+    max-width: 60%;
+    margin: 60px 100px;
+    
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+main .enq .left2 img{
+    padding-right: 25px;
+    height: 75px;
+}
+
+.left2 .ele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:12px 30px ;
+}
+
+
+.left2 .ele span{
+   
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    margin-left: 20px;
+    background-color:#152332;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+
+main .enq .right{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-width: 40%;
+    height: 80vh;
+    margin-left: 50%;
+    margin-top: 25px;
+
+}
+
+.right button{
+
+    border: none;
+    padding:16px 20px;
+    color: white;
+    background-color:var(--color-primary);
+    font-size:large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    vertical-align:middle;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.enq span{
+
+    display: inline-block;
+
+    padding: 20px;
+    margin: 35px;
+    color:whitesmoke;
+    font-size: 50px;
+    font-weight:600;
+    
+}
+
+
+main .name{
+
+    height: 70vh;
+    background-image: url("https://cdnassets.hw.net/c4/3c/b84a0315498cb7810a311b2c6d3e/adobestock-259506521-web.jpg");
+    background-size: max(1200px , 100vw);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.name .name1{
+    height: 70vh;
+    background: rgba(0,0,0,0.6);
+}
+
+
+.name1 .first {
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+  
+}
+
+.first span{
+    position:relative;
+    margin-top: 5%;
+    font-size: 40px;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.first p{
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 19px;
+}
+
+.first .no{
+    font-weight: 700;
+    color: white;
+    font-size: 28px;
+}
+
+
+.first button{
+ 
+    padding:13px 18px;
+    border: none;
+    color: white;
+    background-color:var(--color-primary);
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    vertical-align:middle;
+    cursor: pointer;
+
+}
+
+
+main .pro{
+    position: relative;
+    height: 35vh;
+}
+
+.pro .txt1{
+
+    position: relative;
+    max-width: 30%;
+    margin: auto;
+    top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pro .txt2{
+
+    position: relative;
+    max-width: 58%;
+    margin: auto;
+    top: 35px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.cont
+{
+    width: 90vw;
+    margin: auto;
+    margin-top: 1.5vw;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit ,minmax(270px ,1fr));
+}
+
+.cont .item{
+    height: 70vh;
+    border: 2px solid rgba(231, 217, 217, 0.89);
+    border-radius: 30px;
+
+}
+
+.cont span {
+    height: 30vh;
+    position: relative;
+    top: 22px;
+    left: 22px;
+}
+
+.cont .p{
+
+    margin-left: 20px;
+    margin-top: 4vw;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p h3{
+    
+    margin-bottom: 1vw;
+    font-weight: 600;
+    
+}
+
+.cont .item:hover{
+ 
+    visibility: visible;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.35s;
+    animation-fill-mode:both;
+    animation-name:Ani;
+}
+
+
+@keyframes Ani {
+
+    100%{
+        background-color:var(--color-hover);
+        color:whitesmoke;
+
+    }
+    
+}
+
+@keyframes fadeInUp {
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+}
+
+
+footer{
+    margin-top: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.flex{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.card-header span{
+    cursor: pointer;
+    transform: scale(1.65);
+}
+
+
+.card-body .card-title p{
+    font-size: 15px;
+}
+
+.card h4{
+    margin-top: 16px;
+}
